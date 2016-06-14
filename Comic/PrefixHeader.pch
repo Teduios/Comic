@@ -1,0 +1,45 @@
+//
+//  PrefixHeader.pch
+//  NovelApp
+//
+//  Created by mj on 16/4/12.
+//  Copyright © 2016年 tarena. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kSCREENW [UIScreen mainScreen].bounds.size.width
+#define kSCREENH [UIScreen mainScreen].bounds.size.height
+#define kScrollViewH 250
+#define  ksegmentW  kSCREENW/2
+#define ksegmentH 30
+
+#define COLOR(R, G, B, A)  [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+
+
+//缓存路径
+#define  cachePath  NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0]
+//SQL路径
+#define FilePath [cachePath stringByAppendingPathComponent:@"comicList.sqlite"]
+
+
+#import "FBDBTools.h"
+#import <YYKit.h>
+#import <FMDB.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "UIView+HUD.h"
+#import <MBProgressHUD.h>
+#import "BookViewModel.h"
+#import "TRNetManager.h"
+#import "TRComicImageCell.h"
+#import "UIScrollView+Refresh.h"
+#import "NSObject+Parse.h"
+#import "NSObject+YYModel.h"
+#import "YYClassInfo.h"
+#import "UIImage+ResizedImage.h"
+#import "UIView+Coordinate.h"
+#import "UIBarButtonItem+Extension.h"
+
+#endif /* PrefixHeader_pch */
